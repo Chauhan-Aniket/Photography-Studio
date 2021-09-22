@@ -234,7 +234,7 @@ header .navbar-brand {
           transform: translateX(-50%);
   width: 400px;
   height: 575px;
-  background: url(/assets/images/hero-section.jpg), no-repeat;
+  background: url(/assets/images/hero-section.webp), no-repeat;
   background-position: center;
   background-size: cover;
   border-bottom-left-radius: 200px;

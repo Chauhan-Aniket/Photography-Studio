@@ -53,3 +53,7 @@ particlesJS("particles-js", {
 	},
 	retina_detect: true,
 });
+
+// footer date
+let date = new Date();
+document.querySelector("#fullYear").innerText = date.getFullYear();

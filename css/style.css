@@ -432,6 +432,9 @@ header .navbar-brand {
   bottom: -5%;
   left: -15%;
   width: 250px;
+  font-size: 28px;
+  fill: #fff;
+  font-family: "Halvetica";
   -webkit-animation: spin 10s linear infinite;
           animation: spin 10s linear infinite;
 }

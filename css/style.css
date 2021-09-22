@@ -79,16 +79,6 @@ button.btn:focus {
           box-shadow: none;
 }
 
-#particles-js {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 130%;
-  height: 100%;
-}
-
 header {
   position: relative;
 }
@@ -557,13 +547,10 @@ footer a:hover {
   color: #1e90ff;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 972px) {
   :is(p, a, label) {
     font-size: 1rem;
     letter-spacing: 1.5px;
-  }
-  #particles-js {
-    width: 100%;
   }
   header .navbar-nav {
     display: -webkit-box;
@@ -583,6 +570,22 @@ footer a:hover {
   header .navbar-nav .nav-item:first-child {
     padding-right: 2.5rem;
   }
+  .about-section .container .content p {
+    width: 80%;
+  }
+  .about-section .container figure .circle-text {
+    left: -8%;
+    bottom: -10%;
+    width: 200px;
+  }
+  .service-section::after,
+  .contact-section::after {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
   .hero-section .hero-text {
     padding-top: 15rem;
     text-align: center;
@@ -607,16 +610,6 @@ footer a:hover {
   }
   .about-section .container figure .about-img {
     border-bottom-left-radius: 50%;
-  }
-  .about-section .container figure .circle-text {
-    left: -8%;
-    bottom: -10%;
-    width: 200px;
-  }
-  .service-section::after,
-  .contact-section::after {
-    width: 100%;
-    border-radius: 0;
   }
   .service-section p {
     width: 100%;

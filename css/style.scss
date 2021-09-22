@@ -66,16 +66,6 @@ button.btn {
 	}
 }
 
-// bubbles
-#particles-js {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 130%;
-	height: 100%;
-}
-
 // Navbar
 header {
 	position: relative;
@@ -446,16 +436,12 @@ footer {
 	}
 }
 
-// -------- Mobile view ---------
-@media screen and (max-width: 420px) {
+// Media queries
+@media screen and (max-width: 972px) {
 	:is(p, a, label) {
 		font-size: 1rem;
 		letter-spacing: 1.5px;
 	}
-	#particles-js {
-		width: 100%;
-	}
-
 	header {
 		.navbar-nav {
 			display: flex;
@@ -475,6 +461,34 @@ footer {
 		}
 	}
 
+	.about-section {
+		.container {
+			.content {
+				p {
+					width: 80%;
+				}
+			}
+			figure {
+				.circle-text {
+					left: -8%;
+					bottom: -10%;
+					width: 200px;
+				}
+			}
+		}
+	}
+
+	.service-section,
+	.contact-section {
+		&::after {
+			width: 100%;
+			border-radius: 0;
+		}
+	}
+}
+
+// -------- Mobile view ---------
+@media screen and (max-width: 420px) {
 	.hero-section {
 		.hero-text {
 			padding-top: 15rem;
@@ -509,20 +523,7 @@ footer {
 				.about-img {
 					border-bottom-left-radius: 50%;
 				}
-				.circle-text {
-					left: -8%;
-					bottom: -10%;
-					width: 200px;
-				}
 			}
-		}
-	}
-
-	.service-section,
-	.contact-section {
-		&::after {
-			width: 100%;
-			border-radius: 0;
 		}
 	}
 

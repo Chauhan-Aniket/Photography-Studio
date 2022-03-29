@@ -567,3 +567,20 @@ footer {
 		}
 	}
 }
+
+// custom cursor
+/* Set Scrollbar width */
+::-webkit-scrollbar {
+	width: 15px;
+}
+/* set Track */
+::-webkit-scrollbar-track {
+	// border: 1px dashed #f2f2f2;
+	border-radius: 10px;
+	border: 2px solid transparent;
+}
+
+/* set Thumb */
+::-webkit-scrollbar-thumb {
+	background: $blueColor;
+}
